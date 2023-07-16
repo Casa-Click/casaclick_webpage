@@ -2689,6 +2689,7 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button {
+		padding: 0.5em 1em;
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
