@@ -31,12 +31,3 @@ Si deseas contribuir a la landing page del proyecto, puedes hacerlo siguiendo es
 3. Envía un *pull request* para revisar tus cambios y fusionarlos en la rama principal.
 
 
-### A la MovilApp
-
-Este es el link de prueba: https://previewer.adalo.com/4f6ca946-acbb-4e8b-b1dd-1fe8b03d5da6 Si bien aun no se encuentra subida a las Stores mas famosas, estamos trabajando en ello. Con el link puede probar la app, y enviarnos las sugerencias que creas !
-
-Agradecemos de antemano tu participación y esperamos que "CasaClick" se convierta en una herramienta útil y valiosa para aquellos que buscan trabajadores del hogar confiables. Si tienes alguna pregunta o inquietud, no dudes en contactarnos.
-
-¡Saludos!
-
-El equipo de "CasaClick"
