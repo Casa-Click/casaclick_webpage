@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casa Click - Portal para Inmobiliarias. Gestiona eficientemente las solicitudes de tus inquilinos.">
+    <meta name="robots" content="index, follow">
+    <title>Casa Click - Inmobiliarias</title>
+    <link rel="stylesheet" href="inmobiliarias-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <!-- Header común con efecto de logo -->
+    <header class="header-hero">
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="casaclickfoto.jpg" alt="Logo de Casa Click" class="logo-img">
+                <span class="logo-text">Casa Click</span>
+            </div>
+            <nav class="nav-list-centered">
+                <a href="usuarios.html" class="nav-button">Usuarios</a>
+                <a href="inmobiliarias.html" class="nav-button active">Inmobiliarias</a>
+            </nav>
+            <div class="cta-header-button">
+                <button onclick="window.location.href='#contacto'" class="cta-button-header">Contáctanos</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="main-hero-section inmobiliarias-hero" data-aos="fade-up">
+        <div class="container">
+            <h1>Gestioná los problemas de mantenimiento fácil y rápido</h1>
+            <p>Dejá que los inquilinos gestionen los problemas y recibí notificaciones solo cuando sea necesario.</p>
+            <button onclick="window.location.href='#contacto'" class="cta-button">Contáctanos</button>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Sección Beneficios: ¿Por qué elegir Casa Click? -->
+    <section id="inmobiliarias" class="section-padding section">
+        <div class="container">
+            <h2 class="title-centered">Hacé más fácil la gestión de tus propiedades</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <i class="fas fa-tools benefit-icon"></i>
+                    <h3>Solicitudes directas desde la app</h3>
+                    <p>El inquilino crea la solicitud desde la app y la asocia a la inmobiliaria mediante un código único, eliminando la intermediación constante.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-chart-line benefit-icon"></i>
+                    <h3>Trazabilidad en tiempo real</h3>
+                    <p>Recibí y aprobá las solicitudes según tus necesidades, manteniendo un control total del proceso de principio a fin.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-clock benefit-icon"></i>
+                    <h3>Optimización de recursos</h3>
+                    <p>Reducí la carga administrativa y ahorra tiempo con la automatización de tareas rutinarias de mantenimiento.</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-check-circle benefit-icon"></i>
+                    <h3>Aprobación de presupuestos</h3>
+                    <p>Si lo deseas, puedes actuar como aprobador de presupuestos, asegurando que los trabajos se ajusten a tus estándares.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Sección Formulario de Contacto -->
+    <section id="contacto" class="contact-form section-padding" data-aos="fade-up">
+        <div class="container-full">
+            <h3 class="form-title-centered">¿Quieres mejorar la gestión de las solicitudes de tus inquilinos?</h3>
+            <p class="form-subtitle-centered">Contáctanos y descubre cómo Casa Click puede ayudarte.</p>
+            <form onsubmit="sendEmail(event);" class="styled-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="cta-button">Solicitar Información</button>
+            </form>
+
+            <!-- Mensaje de confirmación -->
+            <div id="confirmation-message" style="display:none; color: green; font-weight: bold; margin-top: 10px;">
+                ¡El mensaje ha sido enviado correctamente!
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Casa Click. Todos los derechos reservados.</p>
+            <a href="https://sites.google.com/view/politica-privacidad-casaclick/p%C3%A1gina-principal">Política de Privacidad</a>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/casaclickapp"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+                <a href="https://www.instagram.com/casaclickapp/"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+                <a href="https://x.com/casaclickapp"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="scripts.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+
+</body>
+</html>

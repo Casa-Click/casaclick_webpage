@@ -1,0 +1,313 @@
+/* General */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.header-hero {
+    background-color: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ccc;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00643A;
+}
+
+.nav-list-centered {
+    display: flex;
+    justify-content: left;
+    flex-grow: 1;
+}
+
+.nav-button {
+    color: #00643A;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin: 0 15px;
+}
+
+.nav-button.active {
+    color: #FFC00E;
+}
+
+.cta-header-button {
+    margin-left: auto;
+}
+
+.cta-button-header {
+    background-color: #00643A;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button-header:hover {
+    background-color: #004d30;
+    transform: scale(1.05);
+}
+
+/* Main Hero Section */
+.main-hero-section {
+    background-color: #FFC00E;
+    padding: 120px 0; /* Reducir el padding */
+    text-align: center;
+}
+
+.main-hero-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 70px;
+}
+
+.main-hero-section p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.cta-button {
+    background-color: #00643A;
+    color: #ffffff;
+    padding: 10px 20px; /* Ajustar el tamaño del botón */
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: auto; /* Cambiar a auto para que no ocupe el ancho completo */
+    display: inline-block; /* Cambiar a inline-block para mantener el tamaño */
+    margin: 10px auto; /* Alinear el botón al centro */
+}
+
+.cta-button:hover {
+    background-color: #004d30;
+    transform: scale(1.05);
+}
+
+/* Sección Divider */
+.section-divider {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 40px 0;
+}
+
+/* Beneficios */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0 20px; /* Espaciado a los lados */
+}
+
+.benefit-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #00643A;
+}
+
+.benefit-card:hover .benefit-icon {
+    color: #ffffff;
+}
+
+.benefit-card:hover p,
+.benefit-card:hover h3 {
+    color: #fff;
+}
+
+.benefit-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #00643A;
+    transition: color 0.3s ease;
+}
+
+.benefit-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Título centrado */
+.title-centered,
+.section-title-centered {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Formulario de Contacto */
+.contact-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.contact-form p {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #00643A;
+}
+
+.cta-button {
+    background-color: #00643A;
+    color: #ffffff;
+    padding: 15px 30px; /* Mantener este padding para el tamaño */
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: auto; /* Cambiar a auto para que no ocupe el ancho completo */
+    margin-top: 20px; /* Añadir margen superior */
+    min-width: 200px; /* Establecer un ancho mínimo */
+    max-width: 300px; /* Establecer un ancho máximo */
+    display: block; /* Para centrar el botón */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button:hover {
+    background-color: #004d30;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00643A;
+    padding: 20px;
+    color: white;
+}
+
+.footer-container p,
+.footer-container a {
+    font-size: 14px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFC00E;
+}
+
+/* Animaciones */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
