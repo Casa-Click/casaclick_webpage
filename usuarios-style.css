@@ -8,8 +8,8 @@ body, html {
     scroll-behavior: smooth;
 }
 
-/* Preloader */
-#preloader {
+/* Preloader (que ahora se llama index.html) */
+#index {
     position: fixed;
     top: 0;
     left: 0;
@@ -21,6 +21,48 @@ body, html {
     justify-content: center;
     z-index: 9999;
 }
+
+/* Ajustar el tamaño del logo y el texto en el preloader (index.html) */
+#index .logo-container-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ocupar toda la pantalla */
+    text-align: center;
+}
+
+#index .logo-img-large {
+    max-width: 120px; /* Ajustar el tamaño del logo */
+    height: auto;
+}
+
+#index .logo-text-large {
+    margin-top: 10px;
+    font-size: 22px; /* Ajustar el tamaño del texto */
+    color: #00643A;
+}
+
+/* Header */
+.header-hero {
+    background-color: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ccc;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ... (el resto del código CSS para usuarios e inmobiliarias) */
 
 /* Header */
 .header-hero {
