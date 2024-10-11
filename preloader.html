@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader - Casa Click</title>
+    <link rel="stylesheet" href="usuarios-style.css"> <!-- Asegúrate de que este sea el archivo CSS correcto -->
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="logo-container-large">
+            <img src="casaclickfoto.jpg" alt="Logo de Casa Click" class="logo-img-large">
+            <span class="logo-text-large">Casa Click</span>
+        </div>
+    </div>
+
+    <script>
+        // Espera 2 segundos antes de redirigir a la página de usuarios
+        setTimeout(function() {
+            window.location.href = "usuarios.html"; // Asegúrate de que este nombre de archivo sea correcto
+        }, 2000); // 2 segundos
+    </script>
+</body>
+</html>

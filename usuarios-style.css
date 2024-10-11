@@ -1,0 +1,363 @@
+/* General */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.logo-container-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-img-large {
+    width: 120px;
+    height: auto;
+}
+
+.logo-text-large {
+    font-size: 32px;
+    color: #00643A;
+}
+
+/* Header */
+.header-hero {
+    background-color: #ffffff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ccc;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #00643A;
+}
+
+.nav-list-centered {
+    display: flex;
+    justify-content: left;
+    flex-grow: 1;
+}
+
+.nav-button {
+    color: #00643A;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin: 0 15px;
+}
+
+.nav-button:hover {
+    color: #FFC00E;
+}
+
+.nav-button.active {
+    color: #FFC00E;
+}
+
+.cta-header-button {
+    margin-left: auto;
+}
+
+.cta-button-header {
+    background-color: #00643A;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button-header:hover {
+    background-color: #004d30;
+    transform: scale(1.05);
+}
+
+/* Main Hero Section */
+.main-hero-section {
+    background-color: #FFC00E;
+    padding: 190px 0;
+    text-align: center;
+}
+
+.main-hero-section h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 58px;
+}
+
+.main-hero-section p {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.cta-button {
+    background-color: #00643A;
+    color: #ffffff;
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.cta-button:hover {
+    background-color: #004d30;
+    transform: scale(1.05);
+}
+
+/* Secciones Generales */
+.section-padding {
+    padding: 100px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Sección Divider */
+.section-divider {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 40px 0;
+}
+
+/* Beneficios */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* Aumenta el espacio entre los elementos */
+}
+
+.advantage-item {
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advantage-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #00643A;
+}
+
+.advantage-item:hover .advantage-content {
+    color: #ffffff;
+}
+
+.advantage-content {
+    padding: 30px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.advantage-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #00643A;
+    transition: color 0.3s ease;
+}
+
+.advantage-item:hover .advantage-icon {
+    color: #ffffff;
+}
+
+.advantage-item h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.advantage-item p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Rubros Disponibles */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambiado a 3 columnas */
+    gap: 30px; /* Espaciado entre los elementos */
+}
+
+.category-item {
+    width: 100%; /* Ajuste de tamaño para ocupar el 100% */
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover img {
+    transform: scale(1.05);
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-item:hover .category-overlay {
+    opacity: 1;
+}
+
+.category-overlay h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Títulos centrados en las secciones */
+section h2 {
+    text-align: center;
+    font-size: 40px; /* Ajusta el tamaño si es necesario */
+    margin-bottom: 50px;
+}
+
+/* En los Medios Section */
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.media-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.media-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.media-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.media-item:hover .media-image {
+    transform: scale(1.05);
+}
+
+.media-content {
+    margin-top: 15px;
+}
+
+.media-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+}
+
+.media-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00643A;
+    padding: 20px;
+    color: white;
+}
+
+.footer-container p,
+.footer-container a {
+    font-size: 14px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFC00E;
+}
