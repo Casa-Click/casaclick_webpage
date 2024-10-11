@@ -22,22 +22,6 @@ body, html {
     z-index: 9999;
 }
 
-.logo-container-large {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo-img-large {
-    width: 120px;
-    height: auto;
-}
-
-.logo-text-large {
-    font-size: 32px;
-    color: #00643A;
-}
-
 /* Header */
 .header-hero {
     background-color: #ffffff;
@@ -91,10 +75,6 @@ body, html {
     margin: 0 15px;
 }
 
-.nav-button:hover {
-    color: #FFC00E;
-}
-
 .nav-button.active {
     color: #FFC00E;
 }
@@ -120,36 +100,43 @@ body, html {
     transform: scale(1.05);
 }
 
+/* Ocultar el botón en pantallas pequeñas */
+@media (max-width: 768px) {
+    .cta-header-button {
+        display: none;
+    }
+}
+
 /* Main Hero Section */
 .main-hero-section {
     background-color: #FFC00E;
-    padding: 190px 0;
+    padding: 120px 0;
     text-align: center;
 }
 
 .main-hero-section h1 {
-    font-size: 55px;
+    font-size: 48px;
     font-weight: 700;
     color: #333;
     margin-bottom: 58px;
 }
 
 .main-hero-section p {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .cta-button {
     background-color: #00643A;
     color: #ffffff;
-    padding: 20px 40px;
+    padding: 15px 30px;
     border: none;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover {
@@ -157,9 +144,25 @@ body, html {
     transform: scale(1.05);
 }
 
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .main-hero-section h1 {
+        font-size: 36px;
+    }
+
+    .main-hero-section p {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+}
+
 /* Secciones Generales */
 .section-padding {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .container {
@@ -167,83 +170,79 @@ body, html {
     margin: auto;
 }
 
-/* Sección Divider */
-.section-divider {
-    border: none;
-    border-top: 2px solid #ccc;
-    margin: 40px 0;
-}
-
 /* Beneficios */
 .advantages-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px; /* Aumenta el espacio entre los elementos */
+    gap: 40px;
 }
 
 .advantage-item {
-    position: relative;
-    overflow: hidden;
     background-color: #f0f0f0;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    font-size: 18px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .advantage-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    background-color: #00643A;
-}
-
-.advantage-item:hover .advantage-content {
-    color: #ffffff;
-}
-
-.advantage-content {
-    padding: 30px;
-    color: #333;
-    transition: color 0.3s ease;
 }
 
 .advantage-icon {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #00643A;
-    transition: color 0.3s ease;
-}
-
-.advantage-item:hover .advantage-icon {
-    color: #ffffff;
 }
 
 .advantage-item h3 {
-    font-size: 26px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .advantage-item p {
     font-size: 18px;
-    line-height: 1.6;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .advantage-item {
+        padding: 15px;
+    }
+
+    .advantage-icon {
+        font-size: 40px;
+    }
+
+    .advantage-item h3 {
+        font-size: 20px;
+    }
+
+    .advantage-item p {
+        font-size: 16px;
+    }
 }
 
 /* Rubros Disponibles */
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cambiado a 3 columnas */
-    gap: 30px; /* Espaciado entre los elementos */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
 }
 
 .category-item {
-    width: 100%; /* Ajuste de tamaño para ocupar el 100% */
-    height: auto;
     position: relative;
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
 }
 
 .category-item img {
@@ -281,11 +280,27 @@ body, html {
     font-weight: 700;
 }
 
-/* Títulos centrados en las secciones */
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Títulos centrados */
 section h2 {
     text-align: center;
-    font-size: 40px; /* Ajusta el tamaño si es necesario */
+    font-size: 40px;
     margin-bottom: 50px;
+}
+
+/* Ajustes para pantallas pequeñas para centrar títulos */
+@media (max-width: 768px) {
+    section h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
 }
 
 /* En los Medios Section */
@@ -336,6 +351,17 @@ section h2 {
     color: #666;
 }
 
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .media-item {
+        padding: 15px;
+    }
+}
+
 /* Footer */
 .footer-container {
     display: flex;
@@ -360,4 +386,16 @@ section h2 {
 
 .social-icons a:hover {
     color: #FFC00E;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
 }

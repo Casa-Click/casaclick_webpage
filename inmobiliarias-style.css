@@ -69,6 +69,13 @@ body, html {
     margin-left: auto;
 }
 
+/* Ocultar el botón 'Contáctanos' en pantallas móviles */
+@media (max-width: 768px) {
+    .cta-header-button {
+        display: none;
+    }
+}
+
 .cta-button-header {
     background-color: #00643A;
     color: #ffffff;
@@ -89,7 +96,7 @@ body, html {
 /* Main Hero Section */
 .main-hero-section {
     background-color: #FFC00E;
-    padding: 120px 0; /* Reducir el padding */
+    padding: 120px 0;
     text-align: center;
 }
 
@@ -109,16 +116,16 @@ body, html {
 .cta-button {
     background-color: #00643A;
     color: #ffffff;
-    padding: 10px 20px; /* Ajustar el tamaño del botón */
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
     border-radius: 20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    width: auto; /* Cambiar a auto para que no ocupe el ancho completo */
-    display: inline-block; /* Cambiar a inline-block para mantener el tamaño */
-    margin: 10px auto; /* Alinear el botón al centro */
+    width: auto;
+    display: inline-block;
+    margin: 10px auto;
 }
 
 .cta-button:hover {
@@ -138,7 +145,7 @@ body, html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    padding: 0 20px; /* Espaciado a los lados */
+    padding: 0 20px;
 }
 
 .benefit-card {
@@ -182,11 +189,20 @@ body, html {
     line-height: 1.6;
 }
 
-/* Título centrado */
+/* Centrado de títulos */
 .title-centered,
-.section-title-centered {
+.section-title-centered,
+h2,
+h3 {
     text-align: center;
     margin-bottom: 30px;
+}
+
+/* Responsive Benefits Grid */
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Formulario de Contacto */
@@ -242,18 +258,18 @@ body, html {
 .cta-button {
     background-color: #00643A;
     color: #ffffff;
-    padding: 15px 30px; /* Mantener este padding para el tamaño */
+    padding: 15px 30px;
     border: none;
     cursor: pointer;
     font-size: 18px;
     font-weight: 600;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    width: auto; /* Cambiar a auto para que no ocupe el ancho completo */
-    margin-top: 20px; /* Añadir margen superior */
-    min-width: 200px; /* Establecer un ancho mínimo */
-    max-width: 300px; /* Establecer un ancho máximo */
-    display: block; /* Para centrar el botón */
+    width: auto;
+    margin-top: 20px;
+    min-width: 200px;
+    max-width: 300px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -289,25 +305,14 @@ body, html {
     color: #FFC00E;
 }
 
-/* Animaciones */
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
     }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
+    .social-icons {
+        margin-top: 10px;
     }
 }
