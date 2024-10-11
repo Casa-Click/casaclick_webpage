@@ -271,6 +271,13 @@ body, html {
     transition: opacity 0.3s ease;
 }
 
+/* Mostrar siempre el overlay en móviles */
+@media (max-width: 768px) {
+    .category-overlay {
+        opacity: 1;
+    }
+}
+
 .category-item:hover .category-overlay {
     opacity: 1;
 }
